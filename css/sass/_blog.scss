@@ -1,0 +1,106 @@
+.blog {
+  position: relative;
+
+  .section-title {
+    position: relative;
+    margin-bottom: 50px;
+    p {
+      margin-top: 40px;
+    }
+  }
+
+  .blog-item {
+    position: relative;
+    border-radius: 4px;
+    overflow: hidden;
+    -webkit-box-shadow: 0 8px 40px -5px rgb(9 31 67 / 10%);
+    -moz-box-shadow: 0 8px 40px -5px rgba(9, 31, 67, 0.1);
+    box-shadow: 0 8px 40px -5px rgb(9 31 67 / 10%);
+
+    .blog-image {
+      position: relative;
+      overflow: hidden;
+      -webkit-box-shadow: 0 8px 40px -5px rgb(9 31 67 / 10%);
+      -moz-box-shadow: 0 8px 40px -5px rgba(9, 31, 67, 0.1);
+      box-shadow: 0 8px 40px -5px rgb(9 31 67 / 10%);
+    }
+
+    .blog-content {
+      padding: 30px;
+      background: $white-bg;
+
+      .blog-meta {
+        margin-bottom: 20px;
+        .blog-list {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+        .blog-list li {
+          background: rgba(3, 214, 101, 0.1);
+          font-size: 14px;
+          font-weight: normal;
+          display: inline-block;
+          vertical-align: middle;
+          margin: 0 10px 0 0;
+          position: relative;
+          padding: 5px;
+          border-radius: 4px;
+          i {
+            color: $primary-color;
+          }
+        }
+      }
+      h4 {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        word-break: break-word;
+      }
+      h4 a:hover {
+        color: $primary-color;
+      }
+    }
+  }
+}
+
+/* Portfolio */
+
+.portfolio {
+  position: relative;
+
+  .portfolio-wrap {
+    margin: 0 auto 50px;
+    text-align: center;
+
+    .btn-filter {
+      background: transparent;
+      color: $heading-color;
+      position: relative;
+      padding: 8px 30px;
+      border-radius: 30px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 600;
+      text-transform: capitalize;
+      &:not(:first-child) {
+        margin-left: 20px;
+      }
+      &.active {
+        background: $primary-color;
+        color: $white-bg;
+      }
+    }
+  }
+  .grid-item {
+    width: 50%;
+    padding: 10px;
+    .portfolio-item {
+      overflow: hidden;
+      position: relative;
+      border-radius: 7px;
+    }
+  }
+}

@@ -1,0 +1,67 @@
+.provide {
+  position: relative;
+
+  .section-title {
+    p {
+      color: $heading-color;
+      margin-bottom: 40px;
+    }
+  }
+
+  .provide-item {
+    background: $white-bg;
+    margin: 20px 0;
+    padding: 40px 30px;
+    position: relative;
+    border-radius: 7px;
+    overflow: hidden;
+    z-index: 9;
+
+    .provide-icon {
+      position: relative;
+      width: 80px;
+      height: 80px;
+      line-height: 80px;
+      text-align: center;
+      display: inline-block;
+      -webkit-transition: all 0.5s ease-in-out 0s;
+      -moz-transition: all 0.5s ease-in-out 0s;
+      -ms-transition: all 0.5s ease-in-out 0s;
+      -o-transition: all 0.5s ease-in-out 0s;
+      transition: all 0.5s ease-in-out 0s;
+      &::before,
+      &::after {
+        position: absolute;
+        content: "";
+        inset: 0;
+        background: rgba(3, 214, 101, 0.2);
+        border-radius: 100%;
+        border: 0 solid rgba(255, 255, 255, 0.05);
+        animation: da-pulse 1.5s ease-in-out 0s infinite;
+      }
+      &::after {
+        border-color: rgba(3, 214, 101, 0.05);
+        border-width: 5px;
+        inset: -5px;
+      }
+      i {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        transform: translateY(-50%);
+        color: $primary-color;
+        line-height: 40px;
+        display: inline-block;
+        font-size: 40px;
+      }
+    }
+    h5 {
+      margin: 30px 0 20px;
+      text-transform: capitalize;
+      font-size: 20px;
+    }
+  }
+}

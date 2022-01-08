@@ -1,0 +1,45 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  min-width: 250px;
+  box-shadow: 0 8px 40px -5px rgb(9 31 67 / 10%);
+  -webkit-box-shadow: 0 8px 40px -5px rgb(9 31 67 / 10%);
+  flex-direction: column;
+  align-items: stretch;
+  padding: 50px 30px;
+  background: $white-bg;
+  height: 100%;
+  transition: left 0.5s ease-in-out 0s;
+  -webkit-transition: left 0.5s ease-in-out 0s;
+  -moz-transition: left 0.5s ease-in-out 0s;
+  -o-transition: left 0.5s ease-in-out 0s;
+  z-index: 99999;
+  .sidebar-menu {
+    li {
+      a {
+        display: inline-block;
+        padding: 10px 0;
+        color: $heading-color;
+        &:hover {
+          color: $primary-color;
+        }
+      }
+    }
+    li.has-dropdown {
+      .sidebar-submenu {
+        padding-left: 30px;
+        display: none;
+        a {
+          padding: 5px 0;
+        }
+        &.active {
+          display: block;
+        }
+      }
+    }
+  }
+  &.active {
+    left: 0;
+  }
+}

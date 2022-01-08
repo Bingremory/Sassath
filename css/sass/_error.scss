@@ -1,0 +1,21 @@
+.error {
+  position: relative;
+  min-height: 800px;
+
+  .error-image {
+    margin-bottom: 25px;
+
+    .error-round {
+      position: absolute;
+      width: 80%;
+      left: 43%;
+      transform: translateX(-50%);
+      margin-left: -35%;
+      top: -50px;
+      z-index: -1;
+    }
+    img {
+      margin: 0 auto;
+    }
+  }
+}

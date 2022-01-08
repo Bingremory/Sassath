@@ -1,0 +1,87 @@
+.pricing {
+  position: relative;
+
+  .pricing-item {
+    position: relative;
+    border-radius: 7px;
+    overflow: hidden;
+    background: $white-bg;
+    padding-bottom: 50px;
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    -moz-transition: all 0.5s ease-in-out 0s;
+    -ms-transition: all 0.5s ease-in-out 0s;
+    -o-transition: all 0.5s ease-in-out 0s;
+    transition: all 0.5s ease-in-out 0s;
+    -webkit-box-shadow: 0 8px 40px -5px rgb(9 31 67 / 10%);
+    -moz-box-shadow: 0 8px 40px -5px rgba(9, 31, 67, 0.1);
+    box-shadow: 0 8px 40px -5px rgb(9 31 67 / 10%);
+
+    @media #{$md} {
+      margin: 20px 0;
+    }
+    @media #{$sm} {
+      margin: 20px 0;
+    }
+    @media #{$xs} {
+      margin: 20px 0;
+    }
+
+    &.active {
+      background: $primary-color;
+
+      .pricing-list {
+        li {
+          color: $white-bg;
+          i {
+            color: $white-bg;
+          }
+        }
+      }
+    }
+
+    &:hover {
+      background: $primary-color;
+
+      .pricing-list {
+        li {
+          color: $white-bg;
+          i {
+            color: $white-bg;
+          }
+        }
+      }
+    }
+
+    .pricing-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: $white-bg;
+      padding: 30px;
+      text-align: center;
+      position: relative;
+      z-index: 9;
+      h2 {
+        color: $primary-color;
+      }
+    }
+
+    .pricing-list {
+      margin: 30px 30px 30px;
+
+      li {
+        position: relative;
+        display: block;
+        margin-bottom: 20px;
+        i {
+          color: $primary-color;
+          font-size: 20px;
+        }
+      }
+    }
+    a.btn {
+      margin-left: 30px;
+      margin-top: auto;
+    }
+  }
+}

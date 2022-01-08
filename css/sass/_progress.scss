@@ -1,0 +1,36 @@
+.skill {
+  margin: 1rem 0;
+
+  .skill-title {
+    color: #555;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+    font-size: 16px;
+  }
+  .skill-bar {
+    height: 8px;
+    border-radius: 4px;
+    background-color: #ece6fa;
+    position: relative;
+
+    .skill-progress {
+      position: absolute;
+      height: 100%;
+      width: 0%;
+      top: 0;
+      left: 0;
+      background-color: $primary-color;
+      transition: 1s;
+      border-radius: 4px;
+    }
+
+    .skill-percent {
+      position: absolute;
+      right: 0;
+      top: -35px;
+      color: $purple-bg;
+      font-size: 16px;
+      font-weight: 600;
+    }
+  }
+}

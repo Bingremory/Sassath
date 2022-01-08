@@ -1,0 +1,52 @@
+.about {
+  position: relative;
+
+  .about-image {
+    background: $white-bg;
+    position: relative;
+    border-radius: 7px;
+    animation: topBottom 5s infinite;
+  }
+
+  .section-title {
+    @media #{$md} {
+      margin-top: 30px;
+    }
+    @media #{$sm} {
+      margin-top: 30px;
+    }
+    @media #{$xs} {
+      margin-top: 30px;
+    }
+  }
+
+  .about-list {
+    margin-bottom: 20px;
+    li {
+      margin-bottom: 15px;
+
+      i {
+        color: $primary-color;
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+/* About Area */
+
+.about-area {
+  position: relative;
+  background: url(../img/about/about-area-bg.png) left bottom / contain
+    no-repeat;
+
+  .section-title {
+    p.lead {
+      color: $heading-color;
+      margin-bottom: 20px;
+    }
+    p {
+      margin-bottom: 20px;
+    }
+  }
+}

@@ -1,0 +1,72 @@
+.faq {
+  .section-title {
+    p {
+      margin-top: 40px;
+    }
+  }
+}
+
+.accordion-item {
+  margin-bottom: 20px;
+}
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  cursor: pointer;
+  background: $white-bg;
+  -webkit-box-shadow: 0 8px 40px -5px rgb(9 31 67 / 10%);
+  -moz-box-shadow: 0 8px 40px -5px rgba(9, 31, 67, 0.1);
+  box-shadow: 0 8px 40px -5px rgb(9 31 67 / 10%);
+  h3 {
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: capitalize;
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}
+.accordion-content {
+  p {
+    padding: 20px;
+  }
+  height: 0;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  overflow: hidden;
+}
+
+.accordion-icon {
+  transition: 0.2s;
+  color: $heading-color;
+}
+
+.accordion-open .accordion-icon {
+  transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  color: $white-bg;
+}
+
+.accordion-open .accordion-header {
+  background: $purple-bg;
+  color: $white-bg;
+}
+
+.accordion-open .accordion-header h3 {
+  color: $white-bg;
+}
+
+.accordion-open .accordion-content {
+  background: $white-bg;
+  -webkit-box-shadow: 0 8px 40px -5px rgb(9 31 67 / 10%);
+  -moz-box-shadow: 0 8px 40px -5px rgba(9, 31, 67, 0.1);
+  box-shadow: 0 8px 40px -5px rgb(9 31 67 / 10%);
+}

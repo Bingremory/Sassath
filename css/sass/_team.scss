@@ -1,0 +1,50 @@
+.team {
+  position: relative;
+
+  .section-title {
+    p {
+      margin-top: 40px;
+    }
+  }
+
+  .team-member {
+    position: relative;
+
+    &:hover {
+      .team-image {
+        border-radius: 7px;
+
+        img {
+          border-radius: 7px;
+        }
+      }
+    }
+
+    .team-image {
+      width: 200px;
+      height: 200px;
+      border-radius: 100rem;
+      margin: 0 auto;
+      img {
+        border-radius: 50%;
+      }
+    }
+    .team-desc {
+      background: $white-bg;
+      padding: 20px;
+      position: relative;
+      z-index: 9;
+      text-align: center;
+      h5 {
+        margin-bottom: 10px;
+        text-transform: capitalize;
+        font-weight: 400;
+        color: $primary-color;
+      }
+      span {
+        color: $heading-color;
+        font-weight: 400;
+      }
+    }
+  }
+}

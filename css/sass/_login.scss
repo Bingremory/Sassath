@@ -1,0 +1,97 @@
+.login {
+  position: relative;
+
+  .section-title {
+    color: $white-bg;
+    p {
+      margin-top: 40px;
+    }
+    h2 {
+      color: $white-bg;
+    }
+  }
+
+  .login-account {
+    h5 {
+      color: $white-bg;
+      a {
+        color: inherit;
+      }
+    }
+  }
+
+  .login-item {
+    padding: 15px;
+  }
+
+  .col-lg-4,
+  .col-lg-6 {
+    padding: 0;
+  }
+
+  .login-form {
+    background-color: $white-bg;
+    -webkit-box-shadow: 0 8px 40px -5px rgb(9 31 67 / 10%);
+    -moz-box-shadow: 0 8px 40px -5px rgba(9, 31, 67, 0.1);
+    box-shadow: 0 8px 40px -5px rgb(9 31 67 / 10%);
+    padding: 20px;
+
+    .login-icons {
+      li {
+        display: inline-block;
+        color: $white-bg;
+        margin: 0 8px 0 0;
+        padding: 0;
+        &.social-facebook a {
+          background-color: #5d82d1;
+        }
+        &.social-dribbble a {
+          background-color: #f7659c;
+        }
+        &.social-skype a {
+          background-color: #13c1f3;
+        }
+        a {
+          display: inline-block;
+          width: 40px;
+          height: 40px;
+          line-height: 40px;
+          font-size: 14px;
+          text-align: center;
+          border-radius: 4px;
+          &:hover {
+            color: $white-bg;
+          }
+        }
+      }
+    }
+    p {
+      margin-top: 20px;
+    }
+    .form-checkbox {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .form-check {
+        display: inline-block;
+        min-height: 1.5rem;
+        padding-left: 1.5em;
+        margin-bottom: 0.125rem;
+
+        .form-check-input {
+          width: 1em;
+          height: 1em;
+          margin-top: 0.2em;
+          display: inline-block;
+        }
+        label {
+          display: inline-block;
+        }
+      }
+      a {
+        color: $primary-color;
+      }
+    }
+  }
+}

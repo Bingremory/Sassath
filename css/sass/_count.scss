@@ -1,0 +1,26 @@
+.count {
+  padding: 0;
+  position: relative;
+
+  .count-item {
+    padding: 20px;
+    text-align: center;
+    background: $white-bg;
+    position: relative;
+    border-radius: 7px;
+    overflow: hidden;
+    h5 {
+      font-size: 40px;
+      font-weight: 600;
+      position: relative;
+      display: block;
+      margin: 0;
+      line-height: 50px;
+    }
+    span {
+      margin-top: 10px;
+      display: inline-block;
+      font-size: 18px;
+    }
+  }
+}

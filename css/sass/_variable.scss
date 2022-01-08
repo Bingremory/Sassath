@@ -1,0 +1,19 @@
+/* Setup Font Color */
+$default-color: #7f7f7f;
+$heading-color: #322f55;
+$primary-color: #03d665;
+$text-gray: #999999;
+$text-rgba: rgba(255, 255, 255, 0.8);
+
+/* Setup Background color */
+$white-bg: #ffffff;
+$dark-bg: #0d092c;
+$grey-bg: #f8fcff;
+$theme-bg: #03d665;
+$purple-bg: #7329c2;
+
+$xl: "only screen and (min-width: 1200px) and (max-width: 1399px)";
+$lg: "only screen and (min-width: 992px) and (max-width: 1199px)";
+$md: "only screen and (min-width: 768px) and (max-width: 991px)";
+$sm: "only screen and (min-width: 576px) and (max-width: 767px)";
+$xs: "(max-width: 575px)";

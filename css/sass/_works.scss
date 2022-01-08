@@ -1,0 +1,43 @@
+.works {
+  position: relative;
+
+  .works-image {
+    animation: topBottom 5s infinite;
+  }
+
+  .section-title {
+    @media #{$md} {
+      margin-top: 30px;
+    }
+    @media #{$sm} {
+      margin-top: 30px;
+    }
+    @media #{$xs} {
+      margin-top: 30px;
+    }
+  }
+
+  .section-title p {
+    margin-bottom: 30px;
+  }
+
+  .works-list {
+    margin-bottom: 30px;
+    @media #{$md} {
+      margin-bottom: 0;
+    }
+    @media #{$sm} {
+      margin-bottom: 0;
+    }
+    @media #{$xs} {
+      margin-bottom: 0;
+    }
+    li {
+      margin-bottom: 15px;
+      i {
+        color: $primary-color;
+        font-size: 20px;
+      }
+    }
+  }
+}
